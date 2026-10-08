@@ -1,0 +1,271 @@
+<!doctype html>
+<!--
+  Support page for the Recorder iOS app (vn.kietnguyendev.voicerecorder).
+  Use this page's URL as the Support URL in App Store Connect.
+  Self-contained on purpose: no external fonts, scripts or trackers.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Recorder</title>
+  <meta name="description" content="Help and contact for Recorder, the on-device voice recorder for iPhone.">
+  <link rel="icon" href="../assets/icon.png">
+  <style>
+    :root {
+      --bg: #f4f4f7;
+      --surface: #ffffff;
+      --elevated: #ebebf0;
+      --text: #1c1c1e;
+      --muted: #5c5c66;
+      --line: rgba(0, 0, 0, 0.08);
+      --accent: #c46f00;
+      --accent-soft: rgba(255, 159, 10, 0.14);
+      --on-accent: #000000;
+      --button: #ff9f0a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0f;
+        --surface: #16161c;
+        --elevated: #22222a;
+        --text: #f2f2f5;
+        --muted: #a1a1aa;
+        --line: rgba(255, 255, 255, 0.08);
+        --accent: #ff9f0a;
+        --accent-soft: rgba(255, 159, 10, 0.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+    header img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+    .meta { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
+    .contact {
+      background: var(--accent-soft);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px 20px;
+      margin-bottom: 28px;
+    }
+    .contact h2 { margin-top: 0; }
+    .contact p { margin: 0 0 14px; }
+    .button {
+      display: inline-block;
+      background: var(--button);
+      color: var(--on-accent);
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+    }
+    .button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .label {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); margin: 32px 4px 10px;
+    }
+    section, details {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      margin-bottom: 12px;
+    }
+    section { padding: 4px 20px 12px; }
+    h2 { font-size: 19px; margin: 18px 0 6px; }
+    details { padding: 0 20px; }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 600;
+      padding: 16px 28px 16px 0;
+      position: relative;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      position: absolute; right: 0; top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px; font-weight: 400; color: var(--muted);
+    }
+    details[open] summary::after { content: "−"; }
+    details > div { padding: 0 0 14px; }
+    details p { margin: 0 0 10px; }
+    ol, ul { padding-left: 22px; margin: 4px 0 12px; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    .table-wrap { overflow-x: auto; margin: 8px 0 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 16px; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { color: var(--muted); }
+    footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 32px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../assets/icon.png" alt="">
+    <div>
+      <h1>Recorder Support</h1>
+      <p class="meta">Help for Recorder on iPhone</p>
+    </div>
+  </header>
+
+  <div class="contact">
+    <h2>Contact us</h2>
+    <p>Questions, bug reports or feature ideas? Send us an email. Please include your iPhone model and iOS version, and the app version, which you can find in Settings › About inside the app.</p>
+    <a class="button" href="mailto:nguyenkiet193@gmail.com?subject=Recorder%20support">Email nguyenkiet193@gmail.com</a>
+  </div>
+
+  <section>
+    <h2>Free and Pro</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Tracks</td><td>Raw or Enhanced</td><td>Raw and Enhanced at the same time</td></tr>
+          <tr><td>Noise reduction</td><td>Balanced preset</td><td>Natural to Strong, with a fine slider</td></tr>
+          <tr><td>Export</td><td>M4A</td><td>M4A and 24-bit WAV</td></tr>
+          <tr><td>Recording length</td><td>Up to 30 minutes</td><td>Unlimited</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="label">Purchases and subscriptions</p>
+
+  <details>
+    <summary>How do I restore Pro on a new or reset iPhone?</summary>
+    <div>
+      <p>Sign in with the same Apple Account you used to buy Pro, then open Recorder and either:</p>
+      <ul>
+        <li>go to the <strong>Settings</strong> tab and tap <strong>Restore Purchases</strong>, or</li>
+        <li>open any Pro feature and tap <strong>Restore</strong> at the bottom of the plans screen.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I cancel my subscription?</summary>
+    <div>
+      <p>Apple manages subscriptions. Cancel at least 24 hours before your renewal date to avoid the next charge:</p>
+      <ol>
+        <li>Open the <strong>Settings</strong> app on your iPhone.</li>
+        <li>Tap your name, then <strong>Subscriptions</strong>.</li>
+        <li>Select <strong>Recorder</strong> and tap <strong>Cancel Subscription</strong>.</li>
+      </ol>
+      <p>While Pro is active, you can also open this screen from Recorder’s Settings tab with <strong>Manage Subscription</strong>. You keep Pro until the end of the period you’ve paid for.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How does the free trial work?</summary>
+    <div>
+      <p>New subscribers to the yearly plan get one week free. If you don’t cancel at least 24 hours before the trial ends, the yearly subscription starts automatically at the price shown on the plans screen. The plans screen shows whether you are eligible before you subscribe.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I request a refund?</summary>
+    <div>
+      <p>Apple handles all payments, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Sign in, choose the purchase and select “Request a refund”.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is the lifetime purchase a subscription?</summary>
+    <div>
+      <p>No. Lifetime is a one-time payment that unlocks Pro permanently on every device signed in to your Apple Account. It never renews.</p>
+    </div>
+  </details>
+
+  <p class="label">Recording</p>
+
+  <details>
+    <summary>Recorder can’t use the microphone</summary>
+    <div>
+      <p>Open the iPhone <strong>Settings</strong> app and go to <strong>Privacy &amp; Security › Microphone</strong>, then turn on <strong>Recorder</strong>. If another app is using the microphone, such as a phone or video call, finish that first.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What do Raw and Enhanced mean?</summary>
+    <div>
+      <p><strong>Raw</strong> is the microphone signal with no processing. <strong>Enhanced</strong> removes steady background noise, like fans, traffic or air conditioning, and evens out speech levels. Pro users can save both at once and compare them during playback.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Which noise reduction setting should I use?</summary>
+    <div>
+      <p><strong>Balanced</strong> suits most rooms. Choose <strong>Natural</strong> for quiet spaces where you want the voice untouched, and <strong>Strong</strong> for loud, steady noise. Noise reduction is tuned for speech, so use Raw when recording music.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Can I use an external microphone?</summary>
+    <div>
+      <p>Yes. Connect a wired, USB or Bluetooth microphone, then tap the input menu at the top of the Record screen and choose it. If it isn’t listed, tap <strong>Find available inputs</strong>. If you change the input during a recording, the recording stops safely and is saved.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What happens when a free recording reaches 30 minutes?</summary>
+    <div>
+      <p>The recording stops and is saved normally. Nothing is lost. You can start a new recording right away, or upgrade to Pro for unlimited length.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>My recording stopped when a call came in</summary>
+    <div>
+      <p>iOS gives phone calls and some system alerts priority over the microphone. When that happens, Recorder stops and saves everything captured up to that moment. Start a new recording after the interruption.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>A recording is marked “Recoverable”</summary>
+    <div>
+      <p>The previous session ended unexpectedly, for example because the app was closed or the device restarted mid-recording. Recorder keeps the original audio, so you can still open, play and export it from the Library.</p>
+    </div>
+  </details>
+
+  <p class="label">Files and storage</p>
+
+  <details>
+    <summary>Where are my recordings stored?</summary>
+    <div>
+      <p>Only on your iPhone, inside the app. Recordings are never uploaded, and they are <strong>not</strong> included in iCloud or device backups. Deleting the app deletes your recordings, so export anything you want to keep first.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I export or back up a recording?</summary>
+    <div>
+      <p>Open the recording in the Library and choose <strong>Share M4A</strong>, or <strong>Share WAV</strong> with Pro. Then save it to Files, AirDrop it to a Mac or send it to another app. You can also swipe right on a recording in the Library to share it quickly as M4A.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How much can I record?</summary>
+    <div>
+      <p>It depends on free space. The Record screen shows an estimate of the recording time left on your iPhone. Saving both Raw and Enhanced uses about twice the space of one track. Recorder stops safely if storage runs very low.</p>
+    </div>
+  </details>
+
+  <footer>
+    <a href="../privacy/">Privacy Policy</a> · © 2026 Kiet Nguyen
+  </footer>
+</main>
+</body>
+</html>
